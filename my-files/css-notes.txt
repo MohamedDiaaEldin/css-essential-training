@@ -1,0 +1,82 @@
+Selctor 
+    the most basic type of selector is html elements     
+      to select every html element we can use * 
+        example : apply css to all h1 elements in the page                 
+            h1 here is the selector
+            h1{
+
+            }
+            or more than html element
+                h1, h2 {
+                    color : red ;
+                }
+            
+class and id selectors :
+- class and id naming conventions 
+    - don't use spaces 
+    - use underscore or dash
+    - use meaningfull name
+
+- class selector :
+    - class selector can be resued throw the document 
+    - we can use more than class in the smae html element
+    - example 
+        .class_name{
+            font-style : italic ;
+        }
+    - to combine more than class in the css 
+        in html element define two class with space betweeen them -> class="first_class second_class"
+        .first-class_name.second_class_name{
+            color : red ; 
+        }
+    - to apply style to class and html element 
+        p.class_name {
+            color : red ; 
+        }
+- ID selector:  
+    - are not resuable - it's only used once for page 
+    - example 
+        #id_name{
+            font-style: italic ;
+        }
+    - can be used to link to spot on the page using href
+        example 
+            <a href="#id_name">link to other element in the page</a>
+            <section id="id_name"> line goes here </sections>
+
+nested selctors :
+    let's say we have html 
+        <section>
+            <p>paragraph</p>
+        </section>
+
+    - Inheritance : all section tag style will be applied to the children elements too 
+        but not all html element follow this concept 
+    - to style the paragraph tag 
+        sections p {
+            color : red ;
+        }
+    
+    we can use the same concept with id and class nested element 
+    it will be somthing like 
+        style h2 which is inside what every the container with class name   
+        .class_name h2{
+            color : red ;
+        }
+
+    - Specificity : 
+        - look for online calculater
+        - rand from lowest to hright 
+            - universal     (*) 
+            - type          (p)
+                - nested type   (section p)
+            - class         (.)
+            - id            (#)
+        
+        - to override all of this we can use !important key word
+            p{
+                color : red!important ;
+            }
+
+
+

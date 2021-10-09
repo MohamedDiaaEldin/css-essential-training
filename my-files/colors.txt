@@ -1,0 +1,12 @@
+define color :
+    - with RGB values rgb(0, 0, 0)  each chanal from 0 t 255
+      or rgb with extra chanal with opacity (0, 50, 10, .5) the extra chanal start from 0 (no opacity)to 1 (full opacity)
+    - color name 
+    - hexadecimal
+    - hst hsla functions (270, 60%, 70%) 
+        - first value for color from 0 to 360 degree for colors
+            color red is 360 degree or 0 degree and other colors are spread arounf the cyrcle 
+        - second is using % for saturation
+            100% is full saturation and 0% is a shade of gray
+        third is lightness is using % 
+            100% lightnss is white , 0% lightness is black , 50% is normal

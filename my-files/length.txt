@@ -1,0 +1,14 @@
+abslout length
+    - fixed unit , always the same size 
+    - Not effected by values in related elements 
+    - examples  px , cm , mm, pt 
+
+Relative lenght 
+    - Relational sizing 
+    - Dependent upo values deacleard in PARENT and ancestor elements
+    - examples  em ,rem, vm, vh
+
+
+unitless values 
+    line-height : 1.5 ;
+    

@@ -1,0 +1,24 @@
+to reference css file onto html 
+    1 - using link tag   
+        <head> 
+            <link rel="stylesheet" href="css/styles.css"> 
+        </head>
+
+    2 - import method
+        <head>
+           <style> @import url('/syles/layout.css') ; </style>
+        </head>
+        
+
+Inline CSS: (not recommended)
+    <p style="color:read;"> this is a paragraph</p>
+
+
+Iternal CSS (inside html page)
+    <head>
+        <style> 
+            h6{
+                color:green;
+            }
+        </style>
+    </haed>

@@ -1,0 +1,4 @@
+images :
+    project thumbnails : 600px width 
+    backgound images = 1400px to 2000px width
+  when we resize the image width size  the height will resize as well 
