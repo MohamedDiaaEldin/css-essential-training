@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background: red;
+            width: 100px;     
+            height: 100px;   
+
+            /*change to inline  */
+            /* display: inline ; */ 
+
+            /* each one is inline but it's block 
+                - width and height values will be applied just like block elements
+                - element are side by side just like inline elements and wrap when there is no longer space on the container
+            */
+            display: inline-block;
+
+        }
+        span {
+            background: blue;
+            width: 100px;     
+            height: 100px;
+            display: block; /* it will make it display as block element*/
+        }
+    </style>
+</head>
+<body>
+    <div>Block element</div>
+    <div>Block element</div>
+
+    <span>inline elemetn</span>
+    <span>inline elemetn</span>
+
+</body>
+</html>

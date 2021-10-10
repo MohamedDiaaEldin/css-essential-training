@@ -1,0 +1,20 @@
+inline : 
+    - takes up the same space as thrit content
+    - elements are displayed in a line from the left side by side
+    - it will wrap for the next line of the content con not fit
+    - common inlin element a , span , strong
+block :
+    - same height as content 
+    - same width as container
+    - common block elements p , h1, article , section 
+
+
+display property : is used to change the default behavior of inline and block-level elements
+
+Box properties : 
+    width : width of the content
+    height : height of the content
+    padding : the space between content and it's border
+    margin : the space between the border and around the element
+
+    
