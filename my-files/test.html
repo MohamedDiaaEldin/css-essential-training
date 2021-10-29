@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-           background: #ffffff; 
-        }
+        /* body {
+            background: #ffffff;
+        } */
+
         section {
-            background: #0000ff; 
-            background:  rgba(170,170,170,0.2);            
+            background: #0000ff;
+            background: rgba(170, 170, 170, 0.2);
             height: 200px;
+        }
+
+        .div-size {
+            height: 15%;
+            width: 80%;
+            border: 10px dotted red;
+            padding: 10px 30px 20px;
+            margin: 50px 20px;
+            background: red;
+        }
+
+        .parent {
+            height: 1000px;
+            width: 1000px;
+            background: blue;
+        }
+        .text-align-test{
+            text-align : justify ;
+        }
+        .second-text-align-test{
+            /* line-height : 2em; */
+            font-size: 16px;
+            line-height : .5em;
         }
     </style>
 </head>
+
 <body>
-<p>pargraph her</p>
-<section>
     <p>pargraph her</p>
-</section>
+    <section>
+        <p>pargraph her</p>
+    </section>
+
+
+
+    <!-- test div size -->
+
+    <div class="parent">
+        <div class="div-size"></div>
+    </div>
+
+    <!-- test text-align -->
+    <p class="text-align-test"> this is a paragraph</p>
+    <p class="second-text-align-test"> this is a paragraph</p>
 </body>
+
 </html>

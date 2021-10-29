@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>        
+        #f-element{
+            width: 300px;
+            height: 200px;
+            background: blue;
+            padding: 20px;
+            /* margin: 15px; */
+            
+            /* 
+            short hand for border-width:2px and border-style: solid adn border-color:red
+            the order of the values do not matter
+            border width : px , thin , medium , thick
+            border color : any color
+            border-style : none , hidden , dotted , dashed , solid , double , etc..
+             */
+            border : 2px solid red ;
+        }
+        #s-element{
+            width: 300px;
+            height: 200px;
+            background: blue;
+            border-width: 3px;
+            border-color: red;
+            border-style: solid;
+            border-radius: 15px;
+            /*  use margin to center element horizontaly */            
+            margin: 0 auto; /* first is top and botten and second is left and right*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Normal header</h1>
+    <div id="f-element"> this is first block element</div>
+    <div id="s-element"> this is second block element</div>
+</body>
+</html>

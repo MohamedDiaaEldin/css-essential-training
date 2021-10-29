@@ -17,4 +17,21 @@ Box properties :
     padding : the space between content and it's border
     margin : the space between the border and around the element
 
-    
+padding - margin
+    padding : 2px;                  for all sides 
+    padding : 2px 10px;             first is top and botton and the second is right and left
+    padding : 2px 10px 20px;        first is top and second is right and left and third is the botton
+    padding : 2px 10px 20px 59x;    first is top and second is right and third is the botton and fourth is the left
+
+Important Note 
+    if we have box with  
+    400 width 
+    30 padding-left
+    30 padding-right
+    20 border-left
+    20 border-right
+    the total width will be 500 
+    - margin don't contribute in this calculation
+    - the same calculation is applyed for the height
+
+margin can be used to center elements horizobtally

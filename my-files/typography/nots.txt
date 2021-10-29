@@ -1,0 +1,63 @@
+typeface : a set of fonts designed with common characteristics , coposed of glyphs
+
+five category of typefaces :
+    script 
+    decorative 
+    monospace
+    serif
+    snas-serif
+
+font families:  font-family
+    serif
+    snas-serif
+    cursive
+    fantasy
+    monospace
+
+font-weight:
+    - range from 100 to 900 
+    - font-weight = 200 ;
+    - low is lighter or thinnest
+    - high is darkest or thickest
+    - 400 = normal (default for body text), bold 700 (default for heading)
+    -lighter and bolder 
+        bolder : 
+            if the parent 100 to 300  make more bolder (400)
+            else if the parent 500 or 500  make the bolder (700)    
+
+font-style :
+    italic 
+    oblique 
+    normal
+
+
+@font-face  : to include font as a resource
+    @font-face{
+        font-family : 'font_family_name'
+        src : url (relative or abslout)
+    }
+    
+    - download or use other service to use font 
+        google font is free  
+
+font-size :
+    relative : are calculated to the nearest parent
+        (width)    1 em = inherited font size 
+        (root em) it's only relative to the root element   
+            1 rem = 
+    abslout : fixed and not effected with other element
+        try to use whole number   
+        browser default = 16px
+
+
+text-decoraation         : none ; /* remove underline */ 
+
+text-decoraation-line    : underline
+text-decoraation-color   : red ;
+text-decoraation-style   : solid
+
+text-align :
+ is used to align content within only a block elements
+
+line-height :
+    set the height of the space between two lines of text

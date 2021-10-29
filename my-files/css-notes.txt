@@ -66,7 +66,7 @@ nested selctors :
 
     - Specificity : 
         - look for online calculater
-        - rand from lowest to hright 
+        - rank from lowest to hright 
             - universal     (*) 
             - type          (p)
                 - nested type   (section p)
