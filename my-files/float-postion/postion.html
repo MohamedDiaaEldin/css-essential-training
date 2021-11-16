@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 500px;     
+            margin: 0;
+            padding: 20px;
+            border: 2px solid red;            
+        }
+        .container{
+            border: 2px solid black;     
+            position: relative;
+        }
+        .box{
+            width: 60px;
+            height: 60px;
+            padding: 10px;
+        }
+        .relative{
+            background-color: lightblue;
+            position: relative;
+            top: 10px;
+            right: 30px;
+        }
+        .fixed{
+            background-color: royalblue;
+            width: 100px;
+            position: fixed;
+
+        }
+        .abslout{
+            background-color: lightgray;
+            position: absolute;
+            right: 25%;
+            bottom: 25%;
+        }
+        .sticky{
+            background-color: wheat;
+            position: sticky;
+            top: 20px;
+        }
+    </style>
+</head>
+<!-- 
+    Postion is used to change the foat of the document
+    five postions :
+        static : not postioned
+        relative :  relative to the current position 
+        abslout : relative to containng element
+        fixed : relative to the view port
+        sticky : relative to the containng element 
+
+ -->
+<body>
+    <div class="container">
+        <div class="box relative">relative</div>
+        <div class="box abslout">abslout</div>
+        <div class="box fixed">fixed</div>
+        <div class="box sticky">sticky</div>
+        <p>
+            Summary or description of the project and/or your role in it. Add as many paragraphs as you need.
+            Summary or description of the project and/or your role in it. Add as many paragraphs as you need.
+            Summary or description of the project and/or your role in it. Add as many paragraphs as you need.
+            Summary or description of the project and/or your role in it. Add as many paragraphs as you need.
+        </p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- 
+        flex-items-propertis
+        flex-basis : sets the intial size of the flex item.
+        flex-grow : sets the flex item to grow if there is space available.
+        flex-shrink : determines how much the flex item will shrink if there is no space available.        
+
+        flex-shortcut 
+        flex : grow shrink basis
+        flex : 0 1 100px ;
+     -->
+    <style>
+        .row_flex_container{
+            display: flex;
+            flex-direction: row;            
+            /* wrap to next line */
+            flex-wrap: wrap; 
+            /* justify items in the main axis */                          
+            justify-content:  center ;       
+            border: 2px solid black;
+        }
+
+        .column_flex_container{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;            
+            justify-content: space-around;                        
+            /* akign items in the cross axis */                          
+            align-items: center;
+            border: 2px solid black;
+            flex-wrap: wrap;
+        }
+
+        .item{
+            margin: 10px;
+            width: 150px;
+            height: 150px;                                    
+            /*  flex */
+            flex-grow: 0;
+            flex-shrink: 1;                   
+        }
+        .blue{
+            background-color: blue;            
+        }
+        .red{
+            background-color: red;            
+        }
+        .green{
+            background-color: green;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 
+        flex container : parent element
+        flex items : child elements
+     -->
+     <section class="row_flex_container">
+         <div class="blue item"> flex item</div>
+         <div class="red item"> flex item</div>
+         <div class="green item"> flex item</div>
+         <div class="green item"> flex item</div>
+         <div class="green item"> flex item</div>
+         <div class="green item"> flex item</div>                     
+     </section>
+
+     <section class="column_flex_container">
+        <div class="blue item"> flex item</div>
+        <div class="red item"> flex item</div>
+        <div class="green item"> flex item</div>
+        <div class="green item"> flex item</div>
+     
+    </section>
+
+
+</body>
+</html>

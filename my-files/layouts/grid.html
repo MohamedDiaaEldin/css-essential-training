@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            fr : represents the fraction of the available space in the grid container
+            gap : 10px --> row and column gap
+            gap : 10px 15px --> 10 px row and 15 px column gap
+            can't use fr in the gap property
+        */
+        /* create explicit grid  */
+        .grid_container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            /* grid-template-rows: repeat(2, 1fr); */
+            grid-template-rows: 150px 150px;                                                
+            gap: 10px;      
+            border: 2px solid black;      
+        }
+        .implicit_grid_container{
+            margin-top: 30px;            
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 150px ;
+            grid-auto-rows: 150px;
+            grid-auto-columns: 150px;
+            border: 2px solid black;
+            gap: 10px;            
+        }
+        
+        .red{
+            background-color: red;            
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        #first_grid_item{
+            /* 
+                to expand out of the grid coulmns and rows
+                start is defined 
+                end is out of range which is (9)
+                grid-column: 4 / 9;                
+             */
+            grid-column: 2 / 3;
+            grid-row: 1 / 4;            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="grid_container">
+        <div class="red item"></div>
+        <div class="blue item"></div>
+        <div class="green item"></div>
+        <div class="green item"></div>
+        <div class="green item"></div>    
+    </div>
+
+    <div  class="implicit_grid_container">
+        <div id="first_grid_item" class="red item"></div>
+        <div class="blue item"></div>
+        <div class="green item"></div>                
+        <div class="green item"></div>                
+    </div>
+
+</body>
+</html>

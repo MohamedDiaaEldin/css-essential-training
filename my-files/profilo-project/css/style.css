@@ -3,6 +3,15 @@ img is the Selctor (which html element to apply this style)
 
  */
 
+/* fix  */
+        /*  fix box model  */
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{    
+    box-sizing: inherit;
+}
+
  /*Global style*/
 
  body {
@@ -12,7 +21,6 @@ img is the Selctor (which html element to apply this style)
     font-family: 'Montserrat' , sans-serif;
     font-size: 15 px;
     line-height: 1.5;
-    
  }
 img {
     width: 300px;     
@@ -39,12 +47,14 @@ h1 ,h2{
     font-family: 'Caveat', cursive;
     font-weight: 400;
     margin: 1px;
+    
 }
 
 /* Profile style */
 header{
     background: #2F3061;
     color: #F7FFF7;
+    text-align: center; 
 }
 
 /* Projects style */
@@ -62,26 +72,52 @@ header{
     padding: 8px;
     border-radius: 4px;
     display: inline-block;
+    
 }
 .projects .btn:hover{
     background: rgba(47, 48, 97, 80%);    
 }
-
+.project-item{
+    overflow: hidden;
+    border-bottom: 1px solid #343434;
+    padding: 25px 0;
+}
+.project-item img{
+    float: left;
+    margin-right: 20px;
+}
+.project-item h3{
+    margin-top: 0;
+}
 /* Work experience style */
 .work-experience {
-    background: #A1C6D7;
+    background: #A1C6D7;    
 }
-
-
+.job-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+}
 /* Educations style */
 .up{
     color: #2F3061;
-    
 }
 
 /* Content Info style */
 footer{
     background: #343434;
     color: #F7FFF7;
+    text-align: center;
+}
 
+.content-list{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.content-list a{
+    padding: 15px;
+    display: inline-block;
 }
