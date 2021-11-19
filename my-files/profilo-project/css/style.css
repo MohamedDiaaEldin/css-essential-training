@@ -33,7 +33,8 @@ a:hover{
 }
 
 .content-wrap{
-    width: 900px;
+    max-width: 800px;
+    width: 90%;
     margin: 0 auto;
     padding: 60px;
     align-items: center;
@@ -69,11 +70,12 @@ h3{
     border: none;
 }
 
+
 /* Profile style */
 header{
     background: #2F3061;
     color: #F7FFF7;
-    text-align: center; 
+    
 }
 
 /* Projects style */
@@ -99,10 +101,7 @@ header{
 .project-item{
     overflow: hidden;
 }
-.project-item img{
-    float: left;
-    margin-right: 20px;
-}
+
 .project-item h3{
     margin-top: 0;
 }
@@ -110,36 +109,89 @@ header{
 .work-experience {
     background: #A1C6D7;    
 }
-.job-item{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-}
+
 /* Educations style */
-.up{
-    color: #2F3061;
+.education {
+    background-image: url(../images/education.jpg);
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
 }
-.up-button{
-    background: #F7FFF7;
+.education p {
+    width: 60%;
+}
+.up-button {
     color: #2F3061;
+    font-family: cursive;
     text-decoration: none;
-    align-items: left;
+    font-size: 90%;
+    padding: 20px;
+    margin-right: 10px;
+    position: absolute;
+    display: inline;
+    right: 0;
+    
 }
+.up-button:hover{
+    color: rgba(47, 48, 97, 80%);
+}
+
 /* Content Info style */
 footer{
     background: #343434;
     color: #F7FFF7;
-    text-align: center;
+   
 }
 
 .content-list{
     list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
+
 }
 .content-list a{
     padding: 15px;
     display: inline-block;
+}
+
+
+/* Responsive */
+/* 750 or more  */
+@media screen and (min-width: 750px){
+    header footer {
+        text-align: center; 
+    }
+
+    .project-item img{
+        float: left;
+        margin-right: 20px;
+    }
+    
+    .job-item{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+    }
+
+
+    .content-list {
+        display: flex;
+        justify-content: center; 
+    }
+}
+/* 746 or less */
+@media screen and (max-width: 749px){
+    h1 {
+        font-size: 75px;
+        line-height: .9;
+        margin-bottom: 20px ;
+    }
+    h2{
+        line-height: 1;
+    }
+    .content-list a{
+        padding: 5px;
+    }
+   
 }
